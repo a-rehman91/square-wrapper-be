@@ -10,19 +10,12 @@ TypeScript + Express API proxy for Square Locations and Catalog endpoints.
 
 ## Environment
 
-Copy `.env.example` to `.env` and set values:
+Use `.env` and set values:
 
 - `SQUARE_ACCESS_TOKEN`
 - `SQUARE_ENVIRONMENT` (`sandbox` or `production`)
 - `PORT` (default `4000`)
 - `CACHE_TTL_SECONDS` (default `120`)
-
-## Secrets Handling
-
-- Keep `SQUARE_ACCESS_TOKEN` only in backend `.env` (never in frontend).
-- Do not commit `.env`; only commit `.env.example`.
-- Backend sends the token to Square via `Authorization: Bearer <token>`.
-- If token is missing, API returns a clean `CONFIG_ERROR` response.
 
 ## Run
 
