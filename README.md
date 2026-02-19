@@ -38,6 +38,15 @@ npm run build
 npm run start
 ```
 
+## Docker
+
+Build and run backend container:
+
+```bash
+docker build -t square-wrapper-be .
+docker run --rm --env-file .env -p 4000:4000 square-wrapper-be
+```
+
 ## API Endpoints
 
 - `GET /api/locations`
